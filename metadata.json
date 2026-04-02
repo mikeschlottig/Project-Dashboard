@@ -1,0 +1,5 @@
+{
+  "name": "Build Log Dashboard",
+  "description": "A full-stack dashboard for tracking projects, experiments, and weekly updates with real-time metrics and timeline visualization.",
+  "requestFramePermissions": []
+}

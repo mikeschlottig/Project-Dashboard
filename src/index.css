@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-surface: #F5F5F0;
+  --color-card: #FFFFFF;
+  --color-ink: #1A1A1A;
+  --color-muted: #7A7A72;
+  --color-neon: #00FF88;
+  --color-border-s: #DDDDD8;
+  --color-shipped: #00FF88;
+  --color-progress: #FFB800;
+  --color-experiment: #FF6B35;
+  --color-archived: #9CA3AF;
+}
+
+@layer base {
+  body {
+    @apply bg-surface font-body text-ink min-h-screen;
+    background-image: radial-gradient(circle, #ccc 0.8px, transparent 0.8px);
+    background-size: 28px 28px;
+  }
+}
+
+.neon-glow {
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.25), 0 0 30px rgba(0, 255, 136, 0.08);
+}
+
