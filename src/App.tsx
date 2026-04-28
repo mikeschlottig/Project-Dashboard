@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Dashboard from './components/Dashboard';
 import Timeline from './components/Timeline';
 import WeeklyUpdates from './components/WeeklyUpdates';
+import AddProject from './components/AddProject';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
           <Route index element={<Dashboard />} />
           <Route path="timeline" element={<Timeline />} />
           <Route path="weekly" element={<WeeklyUpdates />} />
+          <Route path="add" element={<AddProject />} />
         </Route>
       </Routes>
     </BrowserRouter>

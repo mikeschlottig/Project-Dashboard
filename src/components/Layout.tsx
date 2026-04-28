@@ -12,6 +12,7 @@ export default function Layout() {
     { to: '/', label: 'Dashboard' },
     { to: '/timeline', label: 'Timeline' },
     { to: '/weekly', label: 'Weekly Updates' },
+    { to: '/add', label: 'New Project' },
   ];
 
   return (

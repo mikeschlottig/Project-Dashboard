@@ -130,7 +130,7 @@ export default function Dashboard() {
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={statsData.barData} layout="vertical">
               <XAxis type="number" hide />
-              <YAxis dataKey="name" type="category" width={80} tick={{ fontSize: 10, family: 'JetBrains Mono' }} />
+              <YAxis dataKey="name" type="category" width={80} tick={{ fontSize: 10, fontFamily: 'JetBrains Mono' }} />
               <Tooltip />
               <Bar dataKey="value" fill="#1A1A1A" radius={[0, 4, 4, 0]} />
             </BarChart>
@@ -141,7 +141,7 @@ export default function Dashboard() {
           <h3 className="font-mono text-[10px] uppercase tracking-widest text-muted mb-3">Monthly Activity</h3>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={statsData.activityData}>
-              <XAxis dataKey="name" tick={{ fontSize: 8, family: 'JetBrains Mono' }} />
+              <XAxis dataKey="name" tick={{ fontSize: 8, fontFamily: 'JetBrains Mono' }} />
               <Tooltip />
               <Bar dataKey="value" fill="#1A1A1A" radius={[2, 2, 0, 0]} />
             </BarChart>
@@ -151,8 +151,8 @@ export default function Dashboard() {
           <h3 className="font-mono text-[10px] uppercase tracking-widest text-muted mb-3">Visitor Trend</h3>
           <ResponsiveContainer width="100%" height="100%">
             <LineChart data={statsData.visitorTrendData}>
-              <XAxis dataKey="name" tick={{ fontSize: 8, family: 'JetBrains Mono' }} />
-              <YAxis tick={{ fontSize: 8, family: 'JetBrains Mono' }} />
+              <XAxis dataKey="name" tick={{ fontSize: 8, fontFamily: 'JetBrains Mono' }} />
+              <YAxis tick={{ fontSize: 8, fontFamily: 'JetBrains Mono' }} />
               <Tooltip />
               <Line type="monotone" dataKey="value" stroke="#00FF88" strokeWidth={2} dot={{ r: 2 }} />
             </LineChart>
